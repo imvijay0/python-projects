@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>city not found page</title>
+    <link
+      href="{{url_for('static', filename='styles/styles.css')}}"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <p>Sorry,city is not found <br>Please enter a vald city </p>
+    <form action="/weather">
+      <input type="text" name="city" id="city" placeholder="Enter a city " />
+      <button type="submit">submit</button>
+    </form>
+  </body>
+</html>
